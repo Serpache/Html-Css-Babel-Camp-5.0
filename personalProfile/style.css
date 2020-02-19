@@ -37,3 +37,16 @@ footer{
 .material-icons:hover{
     cursor: pointer;
 }
+
+.welcome{
+    height: 1670px;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hi{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
