@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotate(0.8turn);
+}
+  
+p {
+    color: red;
+    font-weight: 50px;
+    transform: rotate(0.7turn);
+}
