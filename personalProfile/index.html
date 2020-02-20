@@ -13,16 +13,21 @@
 <body>
     <header>
         <p class="name">JUAN MARAVILLOSO</p>
-        <i class="material-icons">menu</i>
+        <i id="menuIcon" class="material-icons menuButton">menu</i>
+        <nav>
+            <a class="menuNav" href="index.html#about">SOBRE MI</a>
+            <a class="menuNav" href="index.html#skills">HABILIDADES</a>
+            <a class="menuNav" href="index.html#contact">CONTÁCTAME</a>
+        </nav>
     </header>
 
     <main>
-        <article class="whiteArticle">
+        <article id="contact" class="whiteArticle">
             <P class="hi">¡HOLA!</P>
             <P class="welcomeText">SOY JUAN, <br> DESARROLLADOR <br> WEB</P>
-            <P class="mail">¿HABLAMOS?</P>
+            <a href="form.html" class="mail">¿HABLAMOS?</a>
         </article>
-        <article class="about">
+        <article id="about" class="about">
             <P class="aboutTittle">SOBRE MI</P>
             <P class="aboutText">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -32,7 +37,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Dd7FixvoKBw" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
-        <article class="whiteArticle skills">
+        <article id="skills" class="whiteArticle skills">
             <p class="skillsTittle">HABILIDADES</p>
             <div class="scrollMenu">
                 <div class="skillBox">

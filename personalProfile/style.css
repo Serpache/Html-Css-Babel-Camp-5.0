@@ -23,6 +23,10 @@ footer{
     width: 100%;
 }
 
+nav{
+    display: none;
+}
+
 .name{
     height: 17px;
     font-family: 'Roboto', sans-serif;
@@ -41,6 +45,10 @@ footer{
     cursor: pointer;
 }
 
+.menuButton:focus{
+    background-color: yellow;
+}
+
 article{
     display: flex;
     align-items: center;
@@ -50,9 +58,9 @@ article{
 }
 
 .whiteArticle{
-    height: 430px;
     background-color: #e7e7e7;
     padding-top: 60px;
+    padding-bottom: 5%;
 }
 
 .hi{
@@ -77,6 +85,7 @@ article{
     color: #1c6698;
     border: 2px solid #1c6698;
     margin-top: 34px;
+    text-decoration: none;
 }
 
 .mail:hover{
@@ -84,7 +93,6 @@ article{
 }
 
 .about{
-    height:568px;
     background-color: #000000;
     color: #a2a2a2;
     padding-top: 60px;
@@ -97,17 +105,13 @@ article{
 }
 
 .aboutText{
-    width: 264px;
+    width: 80%;
 }
 
 iframe{
-    width: 272px;
-    height: 153px;
+    width: 70%;
     margin-top: 48px;
-}
-
-.skills{
-    height: 510px;
+    margin-bottom: 7%;
 }
 
 .skillsTittle{
@@ -118,12 +122,14 @@ iframe{
 
 .scrollMenu{
     display: flex;
-    overflow: scroll;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .skillBox{
     width: 208px;
-    height: 360px;
+    min-height: 360px;
     border-radius: 3px;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #000000;
@@ -161,4 +167,100 @@ iframe{
 
 ul{
     list-style-type: none;
+}
+
+/* ------------ FORM CSS ------------ */
+
+.formPage{
+    height: 100%;
+}
+
+form{
+    text-align: start;
+    width: 100%;
+    padding:10%;
+}
+
+.formText{
+    width: 60%;
+}
+
+label{
+    font-size: 14px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: solid 1px #a2a2a2;
+    background-color: #e7e7e7;
+}
+
+input[type=text], input[type=email] {
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    height: 124px;
+    margin-bottom: 50px;
+}
+
+.submitButton{
+    text-align: center;
+}
+
+/* MEDIA RULES FOR ALL SIZES */
+
+@media screen and (min-width: 780px) {
+    .hi{
+        font-size: 24px;
+    }
+    .welcomeText{
+        font-size: 80px;
+    }
+    .aboutTittle{
+        font-size: 36px;
+    }
+    .aboutText{
+        font-size: 20px;
+    }
+    .skillsTittle{
+        font-size: 36px;
+    }
+    .formText{
+        font-size: 36px;
+    }
+    label{
+        font-size: 20px;
+    }
+
+    .formFirstFields{
+        display: flex;
+        justify-content: space-between;
+    }
+    .formFirstField{
+        width: 45%;
+    }
+    .formSecondField{
+        width: 45%;
+    }
+    .scrollMenu{
+        justify-content: center;
+    }
+
+    #menuIcon{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .menuNav{
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: 2.14px;
+  color: #a2a2a2;
+        margin-right: 10px;
+    }
 }
