@@ -1,7 +1,7 @@
 *{ 
-    font-family: 'Bebas Neue', cursive;
     margin: 0;
-	padding: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header, footer{
@@ -13,10 +13,13 @@ header, footer{
     background-color: #000000;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 footer{
     justify-content: center;
-    position:fixed;
-    bottom:0;
     width: 100%;
 }
 
@@ -38,15 +41,124 @@ footer{
     cursor: pointer;
 }
 
-.welcome{
-    height: 1670px;
-    background-color: #e7e7e7;
+article{
     display: flex;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
-    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.whiteArticle{
+    height: 430px;
+    background-color: #e7e7e7;
+    padding-top: 60px;
 }
 
 .hi{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+
+.welcomeText{
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.mail{
+    width: 160px;
+    padding: 13px 36px 13px 36px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1c6698;
+    border: 2px solid #1c6698;
+    margin-top: 34px;
+}
+
+.mail:hover{
+    cursor: pointer;
+}
+
+.about{
+    height:568px;
+    background-color: #000000;
+    color: #a2a2a2;
+    padding-top: 60px;
+}
+
+.aboutTittle{
+    font-size: 20px;
+    letter-spacing: 1.67px;
+    margin-bottom: 23px;
+}
+
+.aboutText{
+    width: 264px;
+}
+
+iframe{
+    width: 272px;
+    height: 153px;
+    margin-top: 48px;
+}
+
+.skills{
+    height: 510px;
+}
+
+.skillsTittle{
+  font-size: 20px;
+  letter-spacing: 1.67px;
+  margin-bottom: 40px;
+}
+
+.scrollMenu{
+    display: flex;
+    overflow: scroll;
+}
+
+.skillBox{
+    width: 208px;
+    height: 360px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+    color: #a2a2a2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.skillName{
+    width: 137px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border: solid 1px #ffffff;
+    padding: 1px;
+}
+
+.skillSection{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.skillSectionText{
+    width: 137px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+ul{
+    list-style-type: none;
 }
