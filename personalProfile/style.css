@@ -27,6 +27,12 @@ nav{
     display: none;
 }
 
+.hiddenMenu{
+    display: none;
+    height: 400px;
+    background-color: red;
+}
+
 .name{
     height: 17px;
     font-family: 'Roboto', sans-serif;
@@ -39,14 +45,6 @@ nav{
     width: 24px;
     height: 24px;
     color: #a2a2a2;
-}
-
-.material-icons:hover{
-    cursor: pointer;
-}
-
-.menuButton:focus{
-    background-color: yellow;
 }
 
 article{
@@ -260,7 +258,7 @@ textarea{
         text-decoration: none;
         font-size: 20px;
         letter-spacing: 2.14px;
-  color: #a2a2a2;
+        color: #a2a2a2;
         margin-right: 10px;
     }
 }
