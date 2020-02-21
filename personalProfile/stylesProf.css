@@ -4,6 +4,8 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
     background: #a2a2a2;
     color: black;
     text-align: center;
@@ -11,6 +13,8 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: normal;
 }
 
 h1{
@@ -62,4 +66,26 @@ section{
     padding-bottom: 70px;
 }
 
-/* ------------------ LAYAOUT ------------------ */
+/* ------------------ CSS ESPECIFIC ------------------ */
+
+header{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+header h2{
+    letter-spacing: 1.5px;
+}
+
+header #icon-open{
+
+}
+
+header #icon-close{
+    display: none;
+}
+
+header nav{
+    display: none;
+}
